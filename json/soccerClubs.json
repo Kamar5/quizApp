@@ -1,0 +1,93 @@
+[
+    {
+        "name" : "Real Madrid C.F.",
+        "manager" : "Zinedine Zidane",
+        "stadium" : "Santiago Bernabéu Stadium",
+        "location" : "Madrid, Spain",
+        "founded" :"1902",
+        "img": "img/soccerClubsIMG/RealMadrid.jpg",
+        "description": "Real Madrid Club de Fútbol, commonly known as Real Madrid, or simply as Real outside Spain frontiers, is a professional football club based in Madrid, Spain.Founded in 1902 as Madrid Football Club, the team has traditionally worn a white home kit since inception. The word Real is Spanish for Royal and was bestowed to the club by King Alfonso XIII in 1920 together with the royal crown in the emblem. The team has played its home matches in the 85,454-capacity Santiago Bernabéu Stadium in downtown Madrid since 1947. Unlike most European sporting entities, Real Madrid's members (socios) have owned and operated the club throughout its history."
+    },
+    {
+        "name" : "FC Barcelona",
+        "manager" : "Luis Enrique",
+        "stadium" : "Camp Nou",
+        "location" : "Barcelona, Spain",
+        "founded" :"1899",
+        "img": "img/soccerClubsIMG/Barcelona.jpg",
+        "description": "Futbol Club Barcelona commonly known as Barcelona and familiarly as Barça, is a professional football club, based in Barcelona, Catalonia, Spain. Founded in 1899 by a group of Swiss, English and Catalan footballers led by Joan Gamper, the club has become a symbol of Catalan culture and Catalanism, hence the motto 'Més que un club' (More than a club). Unlike many other football clubs, the supporters own and operate Barcelona. It is the second most valuable sports team in the world, worth $3.56 billion, and the world's second richest football club in terms of revenue, with an annual turnover of €560.8 million. The official Barcelona anthem is the 'Cant del Barça', written by Jaume Picas and Josep Maria Espinàs."
+
+    },
+    {
+        "name" : "Arsenal F.C.",
+        "manager" : "Arsène Wenger",
+        "stadium" : "Emirates Stadium",
+        "location" : "London, United Kingdom",
+        "founded" :"1886",
+        "img": "img/soccerClubsIMG/Arsenal.jpg",
+        "description": "Arsenal Football Club is an English professional football club based in Holloway, London, that plays in the Premier League, the top flight of English football. The club has won 12 FA Cups, a joint-record, 13 League titles, two League Cups, 14 FA Community Shields, and one UEFA Cup Winners' Cup and Inter-Cities Fairs Cup. Arsenal was the first club from the South of England to join The Football League, in 1893. They entered the First Division in 1904, and have since accumulated the second most points. Relegated only once, in 1913, they continue the longest streak in the top division. In the 1930s, Arsenal won five League Championships and two FA Cups, and another FA Cup and two Championships after the war. In 1970–71, they won their first League and FA Cup Double. Between 1988 and 2005, they won five League titles and five FA Cups, including two more Doubles. They completed the 20th century with the highest average league position."
+    },
+    {
+        "name" : "Manchester United F.C.",
+        "manager" : "José Mourinho",
+        "stadium" : "Old Trafford",
+        "location" : "Manchester, United Kingdom",
+        "founded" :"1878",
+        "img": "img/soccerClubsIMG/ManchesterUnited.jpg",
+        "description": "Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football. Nicknamed 'the Red Devils', the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910. Manchester United have won a record 20 league titles, a joint-record 12 FA Cups, four League Cups and a record 20 FA Community Shields. The club has also won three European Cups, one UEFA Cup Winners' Cup, one UEFA Super Cup, one Intercontinental Cup and one FIFA Club World Cup. In 1998–99, the club became the first in the history of English football to achieve the treble of the Premier League, the FA Cup and the UEFA Champions League."
+    },
+    {
+        "name" : "Chelsea F.C.",
+        "manager" : "Antonio Conte",
+        "stadium" : "Stamford Bridge",
+        "location" : "London, United Kingdom",
+        "founded" :"1905",
+        "img": "img/soccerClubsIMG/Chelsea.jpg",
+        "description": "Chelsea Football Club are an English professional football club based in Fulham, London, that competes in the Premier League of England. Founded in 1905, the club's home ground since then has been Stamford Bridge. Chelsea had their first major success in 1955, when they won the league championship. They then won various cup competitions between 1965 and 1996. The club's greatest period of success has been during the last two decades, winning 17 major trophies since 1997. Chelsea have won five national league titles, seven FA Cups, five League Cups and four FA Community Shields, one UEFA Champions League, two UEFA Cup Winners' Cups, one UEFA Europa League and one UEFA Super Cup. Chelsea are the only London club to win the UEFA Champions League, and one of four clubs, and the only British club, to have won all three main UEFA club competitions."
+    },
+    {
+        "name" : "Manchester City F.C.",
+        "manager" : "Pep Guardiola",
+        "stadium" : "Etihad Stadium",
+        "location" : "Manchester, United Kingdom",
+        "founded" :"1880",
+        "img": "img/soccerClubsIMG/ManchesterCity.jpg",
+        "description": "Manchester City Football Club is a football club in Manchester, England. Founded in 1880 as St. Mark's (West Gorton), they became Ardwick Association Football Club in 1887 and Manchester City in 1894. The club moved to the City of Manchester Stadium in 2003, having played at Maine Road since 1923. The club's most successful period was in the late 1960s and early 1970s when they won the League Championship, FA Cup, League Cup and European Cup Winners' Cup under the management team of Joe Mercer and Malcolm Allison. After losing the 1981 FA Cup Final, the club went through a period of decline, culminating in relegation to the third tier of English football for the only time in their history in 1998. Having regained their Premier League status in the early 2000s, the club was purchased in 2008 by Abu Dhabi United Group and has become one of the wealthiest in the world. Since 2011 the club have won six major honours, including the Premier League in 2012 and 2014. By 2014–15, Manchester City had the sixth-highest revenue in the footballing world with an annual revenue of €463.5 million. In 2016, Forbes magazine estimated they were the world's sixth most valuable football club, worth $1.92 billion."
+    },
+    {
+        "name" : "Pakhtakor Tashkent FK",
+        "manager" : "Grigory Kolosovskiy",
+        "stadium" : "Pakhtakor Markaziy Stadium",
+        "location" : "Tashkent, Uzbekistan",
+        "founded" :"1956",
+        "img": "img/soccerClubsIMG/Pakhtakor.jpg",
+        "description": "Pakhtakor Tashkent FK is an Uzbek professional football club, based in the capital Tashkent. Pakhtakor literally means cotton-grower in English.Pakhtakor was the only Uzbek club to play in the top-level Soviet football league and was the only Central Asian club to appear in a Soviet Cup final. Playing in the Uzbek League since 1992, the club has been the undisputed powerhouse in Uzbekistan since the fall of the Soviet Union, winning ten Uzbek League titles, including six in a row from 2002–07. Pakhtakor also won seven consecutive domestic cups between 2001–07, winning eleven cups in total. Players for the club have won Uzbek footballer of the Year honours eight times, and Pakhtakor teammates swept the top three spots in 2002. Club managers have been named Uzbek coach of the year twice.The team is also a perennial competitor in the AFC Champions League, having reached the semi-finals of the competition twice in 2003 and 2004. Pakhtakor currently holds record in number of consecutive participations in AFC Champions League, participating in 2002 to 2013 tournaments."
+    },
+    {
+        "name" : "FC Bunyodkor",
+        "manager" : "Sergey Lushan",
+        "stadium" : "Bunyodkor Stadium",
+        "location" : "Tashkent, Uzbekistan",
+        "founded" : "2005",
+        "img": "img/soccerClubsIMG/Bunyodkor.jpg",
+        "description": "Football Club Bunyodkor is a professional footballclub based in Tashkent, Uzbekistan. Bunyodkor, a relatively obscure club at the time, made international headlines when it claimed to be close to signing world-famous Barcelona striker Samuel Eto'o although he did not sign with them.On 25 August 2008, AEK Athens Brazilian superstar Rivaldo announced to the Greek press that he was joining Bunyodkor on a reported $14 million two-year contract."
+    },
+    {
+        "name" : "Atletico Madrid",
+        "manager" : "Diego Simeone",
+        "stadium" : "Vicente Calderón Stadium",
+        "location" : "Madrid, Spain",
+        "founded" :"1903",
+        "img": "img/soccerClubsIMG/Atleticomadrid.jpg",
+        "description": "Club Atlético de Madrid, SAD commonly known as Atlético Madrid, or simply as Atlético, is a Spanish professional football club based in Madrid, that plays in La Liga. In terms of UEFA competition titles won, Atlético Madrid is Spain's third most successful club behind Real Madrid and Barcelona. In terms of the number of titles, Atlético Madrid is the fourth most successful club in Spanish football, behind Real Madrid, Barcelona and Athletic Bilbao. Atlético have won La Liga on ten occasions, including a league and cup double in 1996; the Copa del Rey on ten occasions; two Supercopas de España and one Copa Eva Duarte; in Europe, they won the European Cup Winners' Cup in 1962, were runners-up in 1963 and 1986, were European Cup runners-up in 1974, 2014 and 2016, won the Europa League in 2010 and in 2012, won the UEFA Super Cup in 2010 and 2012, as well as the 1974 Intercontinental Cup. The club play their home games at the Vicente Calderón, which holds up to 54,960 spectators. In 2016, Atlético are due to move to their new home of Estadio La Peineta, which will have a capacity of 70,000. Atlético's home kit is red and white vertical striped shirts, with blue shorts, accompanied by blue and red socks. This combination has been used since 1911. The current club kits are manufactured by Nike and the main sponsor is Plus500."
+    },
+    {
+        "name" : "Liverpool F.C.",
+        "manager" : "Jürgen Klopp",
+        "stadium" : "Anfield",
+        "location" : "Liverpool, United Kingdom",
+        "founded" :"1892",
+        "img": "img/soccerClubsIMG/Liverpool.jpg",
+        "description": "Liverpool Football Club is a Premier League association football club based in Liverpool, Merseyside, England. The club has won five European Cups, three UEFA Cups, three UEFA Super Cups, 18 League titles, seven FA Cups, a record eight League Cups, and 15 FA Community Shields. The club was founded in 1892 and joined the Football League the following year. The club has played at Anfield since its formation. Liverpool established itself as a major force in both English and European football during the 1970s and 1980s when Bill Shankly and Bob Paisley led the club to 11 League titles and seven European trophies. Under the management of Rafa Benítez and captained by Steven Gerrard Liverpool became European champion for the fifth time, winning the 2005 UEFA Champions League Final against Milan in spite of being 3–0 down at half time."
+    }
+]

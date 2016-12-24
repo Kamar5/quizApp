@@ -1,0 +1,212 @@
+[
+        {
+            "type": "text",
+            "text": "Who is Liverpool F.C.'s manager?",
+            "possibilities": [
+                {
+                    "answer": "Pep Guardiola"
+                },
+                {
+                    "answer": "Stamford Bridge"
+                },
+                {
+                    "answer": "Jurgen Klopp"
+                },
+                {
+                    "answer": "José Mourinho"
+                }
+            ],
+            "selected": null,
+            "correct": null,
+            "correctAnswer": "2"
+        },
+        {
+            "type": "text",
+            "text": "Which year did Chelsea F.C. founded?",
+            "possibilities": [
+                {
+                    "answer": "1903"
+                },
+                {
+                    "answer": "1905"
+                },
+                {
+                    "answer": "1910"
+                },
+                {
+                    "answer": "1914"
+                }
+            ],
+            "selected": null,
+            "correct": null,
+            "correctAnswer": "1"
+        },
+        {
+            "type": "img",
+            "text": "Which image is Arsenal F.C. logo?",
+            "possibilities": [
+                {
+                    "answer": "/img/soccerClubsIMG/Barcelona.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/Arsenal.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/Chelsea.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/Liverpool.jpg"
+                }
+            ],
+            "selected": null,
+            "correct": null,
+            "correctAnswer": "1"
+        },
+        {
+            "type": "text",
+            "text": "Which club name means cotton-grower?",
+            "possibilities": [
+                {
+                    "answer": "Pakhtakor"
+                },
+                {
+                    "answer": "Barcelona"
+                },
+                {
+                    "answer": "Bunyodkor"
+                },
+                {
+                    "answer": "Manchester"
+                }
+            ],
+            "selected": null,
+            "correct": null,
+            "correctAnswer": "0"
+        },
+        {
+            "type": "text",
+            "text": "When did Manchester City F.C became Manchester City?",
+            "possibilities": [
+                {
+                    "answer": "1880"
+                },
+                {
+                    "answer": "1887"
+                },
+                {
+                    "answer": "2003"
+                },
+                {
+                    "answer": "1894"
+                }
+            ],
+            "selected": null,
+            "correct": null,
+            "correctAnswer": "3"
+        },
+        {
+            "type": "img",
+            "text": "Which club worth $3.56 billion?",
+            "possibilities": [
+                {
+                    "answer": "/img/soccerClubsIMG/Arsenal.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/RealMadrid.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/Chelsea.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/Barcelona.jpg"
+                }
+            ],
+            "selected": null,
+            "correct": null,
+            "correctAnswer": "3"
+        },
+        {
+            "type": "img",
+            "text": "Which club has won 12 FA Cups?",
+            "possibilities": [
+                {
+                    "answer": "/img/soccerClubsIMG/Chelsea.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/Pakhtakor.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/Arsenal.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/AtléticoMadrid.jpg"
+                }
+            ],
+            "selected": null,
+            "correct": null,
+            "correctAnswer": "2"
+        },
+        {
+            "type": "text",
+            "text": "When did Real Madrid C.F. founded?",
+            "possibilities": [
+                {
+                    "answer": "1880"
+                },
+                {
+                    "answer": "1887"
+                },
+                {
+                    "answer": "1902"
+                },
+                {
+                    "answer": "1894"
+                }
+            ],
+            "selected": null,
+            "correct": null,
+            "correctAnswer": "2"
+        },
+        {
+            "type": "img",
+            "text": "Which club own Anfield stadium?",
+            "possibilities": [
+                {
+                    "answer": "/img/soccerClubsIMG/Chelsea.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/Liverpool.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/Arsenal.jpg"
+                },
+                {
+                    "answer": "/img/soccerClubsIMG/Bunyodkor.jpg"
+                }
+            ],
+            "selected": null,
+            "correct": null,
+            "correctAnswer": "1"
+        },
+        {
+            "type": "text",
+            "text": "Who is Chelsea F.C.'s manager?",
+            "possibilities": [
+                {
+                    "answer": "Antonio Conte"
+                },
+                {
+                    "answer": "Jurgen Klopp"
+                },
+                {
+                    "answer": "Diego Simeone"
+                },
+                {
+                    "answer": "Jose Mourinho"
+                }
+            ],
+            "selected": null,
+            "correct": null,
+            "correctAnswer": "0"
+        }
+    ]

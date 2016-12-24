@@ -1,0 +1,244 @@
+<!DOCTYPE>
+<html lang="en" ng-app="quizApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Football Clubs Quiz</title>
+        <!-- bootstrap -->
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+        <!-- main css file -->
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <div class="container">
+                            <div ng-controller="listOfSoccerClubsCtrl" ng-hide="quizMetrics.quizActive || quizMetrics.resultsActive">
+                <div class="page-header">
+                    <h1>Football Clubs Quiz</h1>
+                    <h3>
+                        Learn about all the football clubs below before you decide to take on the <strong>Football Clubs Quiz</strong>
+                    </h3>
+                </div>
+                <form class="form-inline well well-sm clearfix">
+                    <span class="glyphicon glyphicon-search" ></span>
+                    <input type="text" placeholder="Search..." class="form-control" ng-model="searchClubs">
+                    <a class="btn btn-warning pull-right" ng-click="activateQuiz()">Start Quiz</a>
+                    
+                </form>
+                <div class="row">
+                    <div class="col-md-6" ng-repeat="club in clubs |filter : searchClubs">
+                        <div class="well well-sm">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <img ng-src="{{club.img}}" class="img-rounded img-responsive club-image">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4><strong>Name:</strong> {{club.name}}</h4>
+                                    <p><strong>Manager:</strong> {{club.manager}}</p>
+                                    <p><strong>Location:</strong> {{club.location}}</p>
+                                    <p><strong>Arena/Stadium:</strong> {{club.stadium}}</p>
+                                    <p><strong>Founded:</strong> {{club.founded}}</p>
+                                    <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#club-info" ng-click="changeActiveClub(club)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="club-info">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2> {{activeClub.name}}</h2>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-8 col-xs-offset-4">
+                                        <img ng-src="{{activeClub.img}}" class="img-rounded img-responsive">
+                                    </div>
+                                </div>
+                                <div class="row top-buffer">
+                                    <div class="col-md-6">
+                                        <h4><strong>Name:</strong> {{activeClub.name}}</h4>
+                                    <p><strong>Manager:</strong> {{activeClub.manager}}</p>
+                                    <p><strong>Location:</strong> {{activeClub.location}}</p>
+                                    <p><strong>Arena/Stadium:</strong> {{activeClub.stadium}}</p>
+                                    <p><strong>Founded:</strong> {{activeClub.founded}}</p>
+                                    </div>
+                                    <div class="col-xs-12 top-buffer">
+                                        <p>{{activeClub.description}}</p>
+                                        <button class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>                
+                </div>
+            </div><!--End of listCtrl -->
+            
+            <div ng-controller="quizCtrl" ng-show="quizMetrics.quizActive">
+                <div class="page-header">
+                    <h1>Football Clubs Quiz</h1>
+                    <h3>
+                        Learn about all the football clubs below before you decide to take on the <strong>Football Clubs Quiz</strong>
+                    </h3>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h3>Progress:</h3>
+                        <div class="btn-toolbar">
+                            <button class="btn" ng-repeat="question in questions" ng-class="{'btn-info': question.selected !== null, 'btn-danger': question.selected === null }" ng-click="setActiveQuestion($index)">
+                                <span class="glyphicon" ng-class="{'glyphicon-pencil': question.selected !== null, 'glyphicon-question-sign': question.selected === null }"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <h4>Legend: </h4>
+                        <div class="col-sm-4">
+                            <button class="btn btn-info">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                            </button>
+                            <p>Answered</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <button class="btn btn-danger">
+                                <span class="glyphicon glyphicon-question-sign"></span>
+                            </button>
+                            <p>Unanswered</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="alert alert-danger"ng-show="error">
+                        Error! You have not answered all of the questions!
+                        <button class="close" ng-click="error=false">&times;</button>
+                    </div>
+                    <h3>Question:</h3>
+                    <div class="well well-sm" ng-hide="finalise">
+                        <div class="row">
+                            <div class="col-xs-12">
+                               <h4>{{activeQuestion+1 + ". " + questions[activeQuestion].text}}</h4>
+                                <div class="row" ng-if="questions[activeQuestion].type === 'text'">
+                                    <div class="col-sm-6" ng-repeat="answer in questions[activeQuestion].possibilities"><h4 class="answer" ng-class="{'bg-info': $index === questions[activeQuestion].selected}" ng-click="selectAnswer($index)">{{answer.answer}}
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row" ng-if="questions[activeQuestion].type === 'img'">
+                                    <div class="col-sm-3 col-sm-offset-2"  ng-repeat="answer in questions[activeQuestion].possibilities"><h4 class="image-answer" ng-class="{'image-selected': $index === questions[activeQuestion].selected}" ng-click="selectAnswer($index)"><img ng-src="{{answer.answer}}">
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-warning" ng-click="questionAnswered()">Continue</button>
+                    </div>
+                    
+                </div>
+                <div class="well well-sm" ng-show="finalise">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3>Are you sure you want to submit your answers?</h3>
+                            <button class="btn btn-success" ng-click="finaliseAnswers()">Yes</button>
+                            <button class="btn btn-danger" ng-click="finalise = false">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--End of quizCtrl -->
+            
+            
+            <div ng-controller="resultsCtrl" ng-show="quizMetrics.resultsActive">
+                <div class="page-header">
+                    <h1>Football Clubs Quiz</h1>
+                    <h3>
+                        Learn about all the football clubs below before you decide to take on the <strong>Football Clubs Quiz</strong>
+                    </h3>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h3>Results:</h3>
+                        <div class="btn-toolbar">
+                            <button class="btn" ng-repeat="question in quizMetrics.resultsData" ng-class="question.correct ? 'btn-success':'btn-danger'" ng-click= "setActiveQuestion($index)">
+                                <span class="glyphicon" ng-class="{'glyphicon-ok': question.correct, 'glyphicon-remove': !question.correct}"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="row">
+                            <h4>Legend: </h4>
+                            <div class="col-sm-4">
+                                <button class="btn btn-success">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                </button>
+                                <p>Correct</p>
+                            </div>
+                            <div class="col-sm-4">
+                            <button class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                            <p>Incorrect</p>
+                        </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="col-xs-12 top-buffer">
+                        <h2>Your Score {{quizMetrics.numCorrect}}/{{quizMetrics.resultsData.length}}</h2>
+                            <h2><strong>{{calculatePerc() | number:2}}%</strong></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>Question:</h3>
+                    <div class="well well-sm">
+                        <div class="row">
+                            <div class="col-xs-12">
+                               <h4>{{activeQuestion+1 + ". " + quizMetrics.resultsData[activeQuestion].text}}</h4>
+                                <div class="row" ng-if="quizMetrics.resultsData[activeQuestion].type === 'text'">
+                                    <div class="col-sm-6" ng-repeat="answer in quizMetrics.resultsData[activeQuestion].possibilities">
+                                        <h4 class="answer" ng-class="getAnswerClass($index)">{{answer.answer}}
+                                            <p class="pull-right" ng-show="$index != quizMetrics.resultsData[activeQuestion].correctAnswer && $index === quizMetrics.resultsData[activeQuestion].selected">Your Answer</p>
+                                            <p class="pull-right" ng-show="$index == quizMetrics.resultsData[activeQuestion].correctAnswer">Correct Answer</p>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row" ng-if="quizMetrics.resultsData[activeQuestion].type === 'img'">
+                                    <div class="col-sm-3 col-sm-offset-2"  ng-repeat="answer in quizMetrics.resultsData[activeQuestion].possibilities"><h4 class="image-answer" ng-class="getAnswerClass($index)" ng-click="selectAnswer($index)"><img ng-src="{{answer.answer}}">
+                                        <p class="pull-right" ng-show="$index != quizMetrics.resultsData[activeQuestion].correctAnswer && $index === quizMetrics.resultsData[activeQuestion].selected">Your Answer</p>
+                                            <p class="pull-right" ng-show="$index == quizMetrics.resultsData[activeQuestion].correctAnswer">Correct Answer</p>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-lg" ng-click="reset()">Go Back To Info</button>
+            </div><!--End of resultsCtrl -->
+                
+                      
+        </div>
+        
+        
+        <!-- third party js files -->
+        <script src="js/angular.min.js"></script>
+        
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- js files -->
+        <script src="js/app.js"></script>
+        <script src="js/controllers/ListOfSoccerClubsCtrl.js"></script>
+        <script src="js/controllers/QuizCtrl.js"></script>
+        <script src="js/controllers/ResultsCtrl.js"></script>
+        <script src="js/services/DataService.js"></script>
+        <script src="js/services/QuizService.js"></script>
+        
+        
+        
+    </body>
+</html>
