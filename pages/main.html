@@ -1,0 +1,59 @@
+<div>
+                <form class="form-inline well well-sm clearfix">
+                    <span class="glyphicon glyphicon-search" ></span>
+                    <input type="text" placeholder="Search..." class="form-control" ng-model="searchClubs">
+                    <!-- <a class="btn btn-warning pull-right" ng-click="activateQuiz()">Start Quiz</a> -->
+                    <a ui-sref='quiz' class="btn btn-warning pull-right">Start Quiz</a>
+                    
+                </form>
+                <div class="row">
+                    <div class="col-md-6" ng-repeat="club in clubs |filter : searchClubs">
+                        <div class="well well-sm">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <img ng-src="{{club.img}}" class="img-rounded img-responsive club-image">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4><strong>Name:</strong> {{club.name}}</h4>
+                                    <p><strong>Manager:</strong> {{club.manager}}</p>
+                                    <p><strong>Location:</strong> {{club.location}}</p>
+                                    <p><strong>Arena/Stadium:</strong> {{club.stadium}}</p>
+                                    <p><strong>Founded:</strong> {{club.founded}}</p>
+                                    <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#club-info" ng-click="changeActiveClub(club)">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal" id="club-info">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2> {{activeClub.name}}</h2>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-8 col-xs-offset-4">
+                                        <img ng-src="{{activeClub.img}}" class="img-rounded img-responsive">
+                                    </div>
+                                </div>
+                                <div class="row top-buffer">
+                                    <div class="col-md-6">
+                                        <h4><strong>Name:</strong> {{activeClub.name}}</h4>
+                                    <p><strong>Manager:</strong> {{activeClub.manager}}</p>
+                                    <p><strong>Location:</strong> {{activeClub.location}}</p>
+                                    <p><strong>Arena/Stadium:</strong> {{activeClub.stadium}}</p>
+                                    <p><strong>Founded:</strong> {{activeClub.founded}}</p>
+                                    </div>
+                                    <div class="col-xs-12 top-buffer">
+                                        <p>{{activeClub.description}}</p>
+                                        <button class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>                
+                </div>
+            </div><!--End of listCtrl -->

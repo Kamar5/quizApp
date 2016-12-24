@@ -20,8 +20,8 @@ quizApp.controller("listOfSoccerClubsCtrl", ['$scope', 'DataService','quizMetric
         $scope.activeClub = index;
     }
     
-    $scope.activateQuiz = function(){
-       quizMetrics.changeState("quiz", true);
-    }
+    // $scope.activateQuiz = function(){
+    //    quizMetrics.changeState("quiz", true);
+    // }
     
 }]);

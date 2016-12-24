@@ -109,16 +109,16 @@
             "text": "Which club worth $3.56 billion?",
             "possibilities": [
                 {
-                    "answer": "/img/soccerClubsIMG/Arsenal.jpg"
+                    "answer": "img/soccerClubsIMG/Arsenal.jpg"
                 },
                 {
-                    "answer": "/img/soccerClubsIMG/RealMadrid.jpg"
+                    "answer": "img/soccerClubsIMG/RealMadrid.jpg"
                 },
                 {
-                    "answer": "/img/soccerClubsIMG/Chelsea.jpg"
+                    "answer": "img/soccerClubsIMG/Chelsea.jpg"
                 },
                 {
-                    "answer": "/img/soccerClubsIMG/Barcelona.jpg"
+                    "answer": "img/soccerClubsIMG/Barcelona.jpg"
                 }
             ],
             "selected": null,
@@ -130,16 +130,16 @@
             "text": "Which club has won 12 FA Cups?",
             "possibilities": [
                 {
-                    "answer": "/img/soccerClubsIMG/Chelsea.jpg"
+                    "answer": "img/soccerClubsIMG/Chelsea.jpg"
                 },
                 {
-                    "answer": "/img/soccerClubsIMG/Pakhtakor.jpg"
+                    "answer": "img/soccerClubsIMG/Pakhtakor.jpg"
                 },
                 {
-                    "answer": "/img/soccerClubsIMG/Arsenal.jpg"
+                    "answer": "img/soccerClubsIMG/Arsenal.jpg"
                 },
                 {
-                    "answer": "/img/soccerClubsIMG/AtléticoMadrid.jpg"
+                    "answer": "img/soccerClubsIMG/Atleticomadrid.jpg"
                 }
             ],
             "selected": null,
@@ -172,16 +172,16 @@
             "text": "Which club own Anfield stadium?",
             "possibilities": [
                 {
-                    "answer": "/img/soccerClubsIMG/Chelsea.jpg"
+                    "answer": "img/soccerClubsIMG/Chelsea.jpg"
                 },
                 {
-                    "answer": "/img/soccerClubsIMG/Liverpool.jpg"
+                    "answer": "img/soccerClubsIMG/Liverpool.jpg"
                 },
                 {
-                    "answer": "/img/soccerClubsIMG/Arsenal.jpg"
+                    "answer": "img/soccerClubsIMG/Arsenal.jpg"
                 },
                 {
-                    "answer": "/img/soccerClubsIMG/Bunyodkor.jpg"
+                    "answer": "img/soccerClubsIMG/Bunyodkor.jpg"
                 }
             ],
             "selected": null,

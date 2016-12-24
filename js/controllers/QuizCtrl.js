@@ -59,8 +59,6 @@ quizApp.controller("quizCtrl", ['$scope', 'DataService',  'quizMetrics', functio
             }
         }
         $scope.setActiveQuestion();
-        
-        
     }
     
     $scope.selectAnswer = function selectAnswer(index){
@@ -71,8 +69,8 @@ quizApp.controller("quizCtrl", ['$scope', 'DataService',  'quizMetrics', functio
         numQuestionAnswered = 0;
         $scope.activeQuestion = 0;
         quizMetrics.markQuiz($scope.questions);
-        quizMetrics.changeState("quiz", false);
-        quizMetrics.changeState("results", true);
+        // quizMetrics.changeState("quiz", false);
+        // quizMetrics.changeState("results", true);
     }
     
     
