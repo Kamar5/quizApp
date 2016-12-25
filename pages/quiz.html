@@ -43,7 +43,7 @@
                                     </div>
                                 </div>
                                 <div class="row" ng-if="questions[activeQuestion].type === 'img'">
-                                    <div class="col-sm-3 col-sm-offset-2"  ng-repeat="answer in questions[activeQuestion].possibilities"><h4 class="image-answer" ng-class="{'image-selected': $index === questions[activeQuestion].selected}" ng-click="selectAnswer($index)"><img ng-src="{{answer.answer}}">
+                                    <div class="col-sm-3 col-sm-offset-2"  ng-repeat="answer in questions[activeQuestion].possibilities"><h4 class="image-answer" ng-class="{'image-selected': $index === questions[activeQuestion].selected}" ng-click="selectAnswer($index)"><img ng-src="quizApp/{{answer.answer}}">
                                         </h4>
                                     </div>
                                 </div>
