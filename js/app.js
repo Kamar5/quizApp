@@ -1,6 +1,6 @@
 var quizApp = angular
 			.module('quizApp', ['ui.router'])
-			.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+			.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
 					$urlRouterProvider.otherwise('/');
 					$stateProvider
 						.state('main', {
@@ -18,4 +18,5 @@ var quizApp = angular
 							templateUrl: 'pages/results.html',
 							controller: 'resultsCtrl'
 						});
+						$locationProvider.html5Mode(true);
 				}]);

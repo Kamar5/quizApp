@@ -1,12 +1,36 @@
-.club-image{
-    
-    width: 100%;
-    height: 162px;
+/*main html*/
+.clubs .club-image{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 10px;
 }
 
+
+
+
+.clubs .listofclubs button{
+    margin-right: 10px;
+}
 .top-buffer{
     margin-top: 20px;
 }
+
+@media (max-width: 844px) { 
+    .clubs input{
+        width: 40%;
+        float: left;
+    }
+    .clubs .glyphicon{
+        float: left;
+        margin-top: 10px;
+        margin-right: 1px;
+    }
+ }
+
+
+
+
 
 
 .answer{

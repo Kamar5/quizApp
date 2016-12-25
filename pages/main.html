@@ -1,14 +1,20 @@
-<div>
+<div class="clubs">
+    <div class="alert alert-warning alert-dismissable fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        Learn about all the football clubs below before you decide to take on the <strong>Football Clubs Quiz</strong>
+    </div>
                 <form class="form-inline well well-sm clearfix">
                     <span class="glyphicon glyphicon-search" ></span>
                     <input type="text" placeholder="Search..." class="form-control" ng-model="searchClubs">
                     <!-- <a class="btn btn-warning pull-right" ng-click="activateQuiz()">Start Quiz</a> -->
                     <a ui-sref='quiz' class="btn btn-warning pull-right">Start Quiz</a>
-                    
                 </form>
-                <div class="row">
-                    <div class="col-md-6" ng-repeat="club in clubs |filter : searchClubs">
-                        <div class="well well-sm">
+                <div class="row  listofclubs">
+                    <div class="col-sm-4" ng-repeat="club in clubs |filter : searchClubs">
+                        <!--  <div class="col-sm-5">
+                            <img ng-src="{{club.img}}" class="img-rounded img-responsive club-image">
+                        </div> -->
+                        <!-- <div class="well well-sm">
                             <div class="row">
                                 <div class="col-sm-5">
                                     <img ng-src="{{club.img}}" class="img-rounded img-responsive club-image">
@@ -22,7 +28,19 @@
                                     <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#club-info" ng-click="changeActiveClub(club)">Learn More</button>
                                 </div>
                             </div>
+                        </div> -->
+
+                        <div class="well well-sm">
+                            <div class="row">
+                                    <img ng-src="{{club.img}}" class="img-rounded img-responsive club-image">
+                                    <p>{{club.name}}</p>
+                                    <p>{{club.manager}}</p>
+                                    <p>{{club.location}}</p>
+                                    <button class="btn btn-primary pull-right" data-toggle="modal" data-target="#club-info" ng-click="changeActiveClub(club)">Learn More</button>
+                            </div>
                         </div>
+
+
                     </div>
                 </div>
                 <div class="modal" id="club-info">
